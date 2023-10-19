@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Sua Nacionalidade: <input type="text" name="xnac" id="xnac"> 
+    <input type="button" value="Enviar" onclick="nacionalidade()">
+
+    <div id="res">
+
+    </div>
+</body>
+
+<script>
+    function nacionalidade() {
+        var nac = window.document.getElementById('xnac')
+        var pais = (nac.value)
+
+        var res = window.document.getElementById('res')
+        res.innerHTML = `<p>O seu País é o(a) <strong>${pais}</strong></p>`
+
+        if (pais == 'Brasil') {
+            res.innerHTML += `<p>Voce é <strong>brasileiro</strong> !</p>`
+        } else {
+            res.innerHTML += `<p>voce é <strong>estrangeiro</strong> !</p>`
+        }
+
+    }
+</script>
+</html>

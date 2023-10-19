@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dividindo</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        html {
+            background-image: linear-gradient(to bottom,rgb(0, 0, 245),yellow);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            text-align: center;
+        }
+
+        main {
+            background-color: black;
+            color: white;
+            height: 270px;
+            display: inline-block;
+            padding: 10px;
+            width: 500px;
+        }
+
+        #xxa1 {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        #xxa2 {
+            width: 40px;
+            margin-left: 10px;
+        }
+
+        #res {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Divisão</h1>
+        <input type="number" name="xxa1" id="xxa1"> /
+        <input type="number" name="xxa2" id="xxa2"> =
+
+        <input type="button" value="Dividir" onclick="dividir()">
+        <div id="res">RESULTADO</div>
+    </main>
+
+    <script>
+        function dividir() {
+            var xa1 = window.document.getElementById('xxa1')
+            var xa2 = window.document.getElementById('xxa2')
+            var res = window.document.getElementById('res')
+            var a1 = Number(xa1.value)
+            var a2 = Number(xa2.value)
+            var d = a1 / a2
+            res.innerHTML = `A divisão deu <strong>${d}</strong>`
+        }
+    </script>
+</body>
+</html>

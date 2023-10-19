@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input {
+            width: 60px;
+        }
+
+        main {
+            background-color: black;
+            display: inline-block;
+            height: 300px;
+            width: 500px;
+            color: white;
+            padding: 10px;
+
+        }
+
+        body {
+            text-align: center;
+            height: 98vh;
+            background-image: linear-gradient(to bottom,rgb(33, 101, 226),white);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #res {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somando</h1>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2"> =
+
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="res">RESULTADO</div>
+    </main>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            var res = window.document.getElementById('res')
+            res.innerHTML = `A soma dos valores é igual a <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

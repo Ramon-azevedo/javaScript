@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="#" >
+                <label for="ano2">Ano de Nascimento: </label>
+                <input type="number" name="ano1" id="ano2">
+                <br>
+                <p>Sexo:
+                <input type="radio" name="sex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label> </p>
+                <br>
+                <input type="button" value="Verificar" id="botao" onclick="varificar()">
+            </form>
+        </section>
+
+        <section>
+            <h3 id="res">Preencha os dados acima para ver o resultado.</h3>
+            <img id="foto">
+        </section>
+    </main>
+    <footer><p>Desenvolvido por Ramon Azevedo</p></footer>
+</body>
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(0, 174, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.541);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    color: white;
+    text-align: center;font-style: italic;
+}
+
